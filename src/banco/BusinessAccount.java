@@ -26,7 +26,7 @@ public class BusinessAccount extends Account {
 		return "Conta nº " + number + " - Type: " + type + "\nHolder: " + holder + "\nBalance: " + balance + "\nLoan limit: " + loanLimit + "\n";		
 	}
 	
-	@Override // anotação para indicar sobreposição ou sobrecarga
+	@Override // anotação para indicar sobreposição ou sobrecarga.
 	public void withdraw(double ammount) { // neste exemplo, usamos super para reaproveitar o código do método withdraw da superclasse, apenas fazendo uma personalização (decontando mais 2,00)
 		super.withdraw(ammount);	
 		balance -= 2.0;
